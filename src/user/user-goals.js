@@ -1,6 +1,6 @@
 import React from "react";
-import LeftMenu from './left-menu';
-import './styles/index.scss';
+import LeftMenu from './utils/left-menu';
+// import './styles/index.scss';
 const UserGoals= () => {
   return (<div className="main">
             <div className="row">

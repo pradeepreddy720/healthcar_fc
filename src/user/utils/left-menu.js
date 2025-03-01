@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './styles/left-menu.scss';
+import '../styles/left-menu.scss';
 const LeftMenu = () => {
   return (
     <div className="col-2 left-menu"> 
