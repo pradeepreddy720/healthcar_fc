@@ -12,3 +12,66 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.homeHeader {
+  display:  flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #282c34;
+  color: white;
+  h1 {
+    left: 40%;
+    position: relative;
+  }
+}
+
+.horizontal-menu {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.horizontal-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.horizontal-menu li {
+  float: left;
+}
+
+.horizontal-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizontal-menu li a:hover {
+  background-color: #111;
+}
+
+.homeContent {
+  padding: 50px;
+  background-color: gainsboro;
+  h3 {
+    padding-left: 13px;
+    line-height: 10px;
+    font-size: 20px;
+  }
+}
+
+.panelButton {
+  margin: 10px;
+  background-color: dimgrey;
+  color: white;
+  border-radius: 4px;
+  height: 27px;
+  border: 5px;
+}
+
