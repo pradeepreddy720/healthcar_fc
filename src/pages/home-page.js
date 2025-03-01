@@ -59,18 +59,13 @@ const Home = () => {
   const handleButtonClick = (panel) => {
     setExpandedPanel(expandedPanel === panel ? null : panel);
   };
-  // const handleButtonClick = (panelTitle) => {
-  //   alert(`Button in ${panelTitle} clicked!`);
-  // };
+  
   return (
     <div>
       <Header />
       <HorizontalMenu />
       <div className='homeContent'>
         <h3>Latest Health Information</h3>
-        {/* <Panel title="Panel 1" onButtonClick={() => handleButtonClick('Panel 1')} />
-        <Panel title="Panel 2" onButtonClick={() => handleButtonClick('Panel 2')} />
-        <Panel title="Panel 3" onButtonClick={() => handleButtonClick('Panel 3')} /> */}
         {panelsData.map(panel => (
           <Panel key={panel.id} panel={panel} isExpand={expandedPanel===panel.id ? true: false} title={panel.title} content={panel.content} onButtonClick={() => handleButtonClick(panel.id)} />
         ))}
