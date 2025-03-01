@@ -1,0 +1,15 @@
+.left-menu{
+    background: #868383;
+    height: 100vh;
+    padding: 30px 0 0 0;
+    .menu-items{
+        .menu-item{
+            padding: 10px;
+            .link{
+                color: #000;
+                text-decoration: none;
+                font-weight: 600;
+            }
+        }
+    }
+}
