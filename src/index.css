@@ -75,3 +75,13 @@ code {
   border: 5px;
 }
 
+.provider-container {
+  padding: 30px;
+  h3 {
+    background-color: gainsboro;
+  }
+  tr :hover {
+    cursor: pointer;
+  }
+}
+

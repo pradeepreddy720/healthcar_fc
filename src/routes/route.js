@@ -5,6 +5,7 @@ import PrivateRoute from './privateRoute';
 import UserDashboad from '../user/dashboard';
 import UserGoals from '../user/user-goals';
 import Layout from '../user/utils/layout';
+import  HealthcareProvider  from "../pages/HealthcareProvider";
 
 export const AppRoutes = () => {
   const [isAuthenticated, setIsAuthenticated]= useState(false);
@@ -12,7 +13,7 @@ export const AppRoutes = () => {
     <Router> {/* Wrap the whole app with BrowserRouter */}
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/login" element={<HomePage />} />
+        <Route path="/login" element={<HealthcareProvider />} />
         <Route path="/register" element={<HomePage />} /> 
         <Route path="/user" element={<Layout />}>
           <Route index element={<UserDashboad />} />
