@@ -65,6 +65,10 @@ const Home = () => {
       <Header />
       <HorizontalMenu />
       <div className='homeContent'>
+        <div className='welcome-message' style={{backgroundColor: '#f0f8ff', padding: '15px', marginBottom: '20px', borderRadius: '8px', textAlign: 'center'}}>
+          <h2 style={{color: '#2c5282', margin: '0 0 10px 0'}}>Hi! Welcome to Healthcare Portal</h2>
+          <p style={{color: '#4a5568', margin: '0'}}>Your health and wellness journey starts here. Explore our resources and stay informed.</p>
+        </div>
         <h3>Latest Health Information</h3>
         {panelsData.map(panel => (
           <Panel key={panel.id} panel={panel} isExpand={expandedPanel===panel.id ? true: false} title={panel.title} content={panel.content} onButtonClick={() => handleButtonClick(panel.id)} />
