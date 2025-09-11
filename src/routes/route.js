@@ -8,7 +8,7 @@ import Layout from '../user/utils/layout';
 import  HealthcareProvider  from "../pages/HealthcareProvider";
 
 export const AppRoutes = () => {
-  const [isAuthenticated, setIsAuthenticated]= useState(false);
+  const [isAuthenticated] = useState(false);
   return (
     <Router> {/* Wrap the whole app with BrowserRouter */}
       <Routes>
